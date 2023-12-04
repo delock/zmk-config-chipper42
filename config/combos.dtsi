@@ -22,7 +22,8 @@
 
 // return bspc cluster
 ZMK_COMBO(ret,   &kp RETURN,    RM4 RM5,     DEF NAV NUM, COMBO_TERM_FAST)
-ZMK_COMBO(bspc,  &kp BSPC,      RT4 RT5,     DEF NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(bspc,  &kp BSPC,      RT4 RT5,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(del,   &kp DEL,       RT4 RT5,     NAV, COMBO_TERM_FAST)
 
 // number row is between row 2 and 3
 ZMK_COMBO(grave, &kp GRAVE,     LM5 LT5,     DEF NAV NUM, COMBO_TERM_SLOW)
@@ -39,13 +40,30 @@ ZMK_COMBO(zero,  &kp N0,        RM4 RT4,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(minus, &kp MINUS,     RT5 RM5,     DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(equal, &kp EQUAL,     RM5 RB5,     DEF, COMBO_TERM_SLOW)
 
-// brack cluster
+// brackets cluster
 ZMK_COMBO(lpar,  &kp LPAR,      LT0 LT1,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(lbkt,  &kp LBKT,      LM0 LM1,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(lbrc,  &kp LBRC,      LB0 LB1,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(rpar,  &kp RPAR,      RT0 RT1,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(rbkt,  &kp RBKT,      RM0 RM1,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(rbrc,  &kp RBRC,      RB0 RB1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(bslh,  &kp BSLH,      LB0 LM1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(fslh,  &kp FSLH,      RM1 RB0,     DEF, COMBO_TERM_SLOW)
+
+// FN cluster
+ZMK_COMBO(f1,   &kp F1,        LM4 LT4,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(f2,   &kp F2,        LM3 LT3,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(f3,   &kp F3,        LM2 LT2,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(f4,   &kp F4,        LM1 LT1,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(f5,   &kp F5,        LM0 LT0,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(f6,   &kp F6,        RM0 RT0,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(f7,   &kp F7,        RM1 RT1,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(f8,   &kp F8,        RM2 RT2,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(f9,   &kp F9,        RM3 RT3,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(f10,  &kp F10,       RM4 RT4,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(f11,  &kp F11,       RT5 RM5,     NAV, COMBO_TERM_SLOW)
+ZMK_COMBO(f12,  &kp F12,       RM5 RB5,     NAV, COMBO_TERM_SLOW)
+
 
 //  row is between row 2 and 3
 /* Horizontal combos - left hand */
