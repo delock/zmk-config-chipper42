@@ -22,7 +22,7 @@
 
 // return bspc cluster
 ZMK_COMBO(ret,   &kp RETURN,    RM4 RM5,     DEF NAV NUM, COMBO_TERM_FAST)
-ZMK_COMBO(bspc,  &kp BSPC,      RT1 RT2,     DEF NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(bspc,  &kp BSPC,      RT4 RT5,     DEF NAV NUM, COMBO_TERM_FAST)
 
 // number row is between row 2 and 3
 ZMK_COMBO(grave, &kp GRAVE,     LM5 LT5,     DEF NAV NUM, COMBO_TERM_SLOW)
