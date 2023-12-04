@@ -21,12 +21,12 @@
 #define HRC_RPAR   &hmr_rpar_gt LA(LCTRL) 0
 
 // return bspc cluster
-ZMK_COMBO(ret,   &kp RETURN,    RM4 RM5,     DEF NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(ret,   &kp RETURN,    RM4 RM5,     DEF NAV, COMBO_TERM_FAST)
 ZMK_COMBO(bspc,  &kp BSPC,      RT4 RT5,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(del,   &kp DEL,       RT4 RT5,     NAV, COMBO_TERM_FAST)
 
 // number row is between row 2 and 3
-ZMK_COMBO(grave, &kp GRAVE,     LM5 LT5,     DEF NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(grave, &kp GRAVE,     LM5 LT5,     DEF NAV, COMBO_TERM_SLOW)
 ZMK_COMBO(one,   &kp N1,        LM4 LT4,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(two,   &kp N2,        LM3 LT3,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(three, &kp N3,        LM2 LT2,     DEF, COMBO_TERM_FAST)
@@ -41,14 +41,14 @@ ZMK_COMBO(minus, &kp MINUS,     RT5 RM5,     DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(equal, &kp EQUAL,     RM5 RB5,     DEF, COMBO_TERM_SLOW)
 
 // brackets cluster
-ZMK_COMBO(lpar,  &kp LPAR,      LT0 LT1,     DEF, COMBO_TERM_FAST)
-ZMK_COMBO(lbkt,  &kp LBKT,      LM0 LM1,     DEF, COMBO_TERM_FAST)
-ZMK_COMBO(lbrc,  &kp LBRC,      LB0 LB1,     DEF, COMBO_TERM_FAST)
-ZMK_COMBO(rpar,  &kp RPAR,      RT0 RT1,     DEF, COMBO_TERM_FAST)
-ZMK_COMBO(rbkt,  &kp RBKT,      RM0 RM1,     DEF, COMBO_TERM_FAST)
-ZMK_COMBO(rbrc,  &kp RBRC,      RB0 RB1,     DEF, COMBO_TERM_FAST)
-ZMK_COMBO(bslh,  &kp BSLH,      LB0 LM1,     DEF, COMBO_TERM_FAST)
-ZMK_COMBO(fslh,  &kp FSLH,      RM1 RB0,     DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(lpar,  &kp LPAR,      LT0 LT1,     DEF NAV, COMBO_TERM_FAST)
+ZMK_COMBO(lbkt,  &kp LBKT,      LM0 LM1,     DEF NAV, COMBO_TERM_FAST)
+ZMK_COMBO(lbrc,  &kp LBRC,      LB0 LB1,     DEF NAV, COMBO_TERM_FAST)
+ZMK_COMBO(rpar,  &kp RPAR,      RT0 RT1,     DEF NAV, COMBO_TERM_FAST)
+ZMK_COMBO(rbkt,  &kp RBKT,      RM0 RM1,     DEF NAV, COMBO_TERM_FAST)
+ZMK_COMBO(rbrc,  &kp RBRC,      RB0 RB1,     DEF NAV, COMBO_TERM_FAST)
+ZMK_COMBO(bslh,  &kp BSLH,      LB0 LM1,     DEF NAV, COMBO_TERM_FAST)
+ZMK_COMBO(fslh,  &kp FSLH,      RM1 RB0,     DEF NAV, COMBO_TERM_SLOW)
 
 // FN cluster
 ZMK_COMBO(f1,   &kp F1,        LM4 LT4,     NAV, COMBO_TERM_FAST)
@@ -65,7 +65,6 @@ ZMK_COMBO(f11,  &kp F11,       RT5 RM5,     NAV, COMBO_TERM_SLOW)
 ZMK_COMBO(f12,  &kp F12,       RM5 RB5,     NAV, COMBO_TERM_SLOW)
 
 
-//  row is between row 2 and 3
 /* Horizontal combos - left hand */
 //ZMK_COMBO(esc,   &kp ESC,       LT3 LT2,     DEF NAV NUM, COMBO_TERM_FAST)
 //ZMK_COMBO(ret,   &kp RETURN,    RT2 RM1,     DEF NAV NUM, COMBO_TERM_FAST)
