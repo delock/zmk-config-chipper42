@@ -20,8 +20,10 @@
 #define HRC_LPAR   &hmr_lpar_lt RS(LCTRL) 0
 #define HRC_RPAR   &hmr_rpar_gt LA(LCTRL) 0
 
-// return
+// return bspc cluster
 ZMK_COMBO(ret,   &kp RETURN,    RM4 RM5,     DEF NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(bspc,  &kp BSPC,      RT1 RT2,     DEF NAV NUM, COMBO_TERM_FAST)
+
 // number row is between row 2 and 3
 ZMK_COMBO(grave, &kp GRAVE,     LM5 LT5,     DEF NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(one,   &kp N1,        LM4 LT4,     DEF, COMBO_TERM_FAST)
@@ -34,6 +36,17 @@ ZMK_COMBO(seven, &kp N7,        RM1 RT1,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(eight, &kp N8,        RM2 RT2,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(nine,  &kp N9,        RM3 RT3,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(zero,  &kp N0,        RM4 RT4,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(minus, &kp MINUS,     RT5 RM5,     DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(equal, &kp EQUAL,     RM5 RB5,     DEF, COMBO_TERM_SLOW)
+
+// brack cluster
+ZMK_COMBO(lpar,  &kp LBRC,      LT0 LT1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(lbkt,  &kp LBKT,      LM0 LM1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(lbrc,  &kp LBRC,      LB0 LB1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(rpar,  &kp RBRC,      RT0 RT1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(rbkt,  &kp RBKT,      RM0 RM1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(rbrc,  &kp RBRC,      RB0 RB1,     DEF, COMBO_TERM_FAST)
+
 //  row is between row 2 and 3
 /* Horizontal combos - left hand */
 //ZMK_COMBO(esc,   &kp ESC,       LT3 LT2,     DEF NAV NUM, COMBO_TERM_FAST)
