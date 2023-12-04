@@ -40,10 +40,10 @@ ZMK_COMBO(minus, &kp MINUS,     RT5 RM5,     DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(equal, &kp EQUAL,     RM5 RB5,     DEF, COMBO_TERM_SLOW)
 
 // brack cluster
-ZMK_COMBO(lpar,  &kp LBRC,      LT0 LT1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(lpar,  &kp LPAR,      LT0 LT1,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(lbkt,  &kp LBKT,      LM0 LM1,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(lbrc,  &kp LBRC,      LB0 LB1,     DEF, COMBO_TERM_FAST)
-ZMK_COMBO(rpar,  &kp RBRC,      RT0 RT1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(rpar,  &kp RPAR,      RT0 RT1,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(rbkt,  &kp RBKT,      RM0 RM1,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(rbrc,  &kp RBRC,      RB0 RB1,     DEF, COMBO_TERM_FAST)
 
