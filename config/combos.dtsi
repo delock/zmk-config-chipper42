@@ -20,8 +20,22 @@
 #define HRC_LPAR   &hmr_lpar_lt RS(LCTRL) 0
 #define HRC_RPAR   &hmr_rpar_gt LA(LCTRL) 0
 
-/* Horizontal combos - left hand */
+// return
 ZMK_COMBO(ret,   &kp RETURN,    RM4 RM5,     DEF NAV NUM, COMBO_TERM_FAST)
+// number row is between row 2 and 3
+ZMK_COMBO(grave, &kp GRAVE,     LM5 LT5,     DEF NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(one,   &kp N1,        LM4 LT4,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(two,   &kp N2,        LM3 LT3,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(three, &kp N3,        LM2 LT2,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(four,  &kp N4,        LM1 LT1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(five,  &kp N5,        LM0 LT0,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(six,   &kp N6,        RM0 RT0,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(seven, &kp N7,        RM1 RT1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(eight, &kp N8,        RM2 RT2,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(nine,  &kp N9,        RM3 RT3,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(zero,  &kp N0,        RM4 RT4,     DEF, COMBO_TERM_FAST)
+//  row is between row 2 and 3
+/* Horizontal combos - left hand */
 //ZMK_COMBO(esc,   &kp ESC,       LT3 LT2,     DEF NAV NUM, COMBO_TERM_FAST)
 //ZMK_COMBO(ret,   &kp RETURN,    RT2 RM1,     DEF NAV NUM, COMBO_TERM_FAST)
 //ZMK_COMBO(mouse, &smart_mouse,  LT3 LT1,     DEF NAV NUM, COMBO_TERM_SLOW)
