@@ -62,6 +62,15 @@ ZMK_COMBO(plus,  &kp PLUS,      LT1 RT1,     DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(minus2,&kp MINUS,     LM1 RM1,     DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(equal2,&kp EQUAL,     LB1 RB1,     DEF, COMBO_TERM_SLOW)
 
+// alias for symmertical column cluster, because symmetrical combo needs extra
+// concentration to trigger
+ZMK_COMBO(dqt,   &kp DQT,       LT0 LT1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(sqt,   &kp SQT,       LM0 LM1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(under, &kp UNDER,     LB0 LB1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(plus,  &kp PLUS,      RT0 RT1,     DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(minus2,&kp MINUS,     RM0 RM1,     DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(equal2,&kp EQUAL,     RB0 RB1,     DEF, COMBO_TERM_SLOW)
+
 
 // FN cluster
 ZMK_COMBO(f1,   &kp F1,        LM4 LT4,     NAV, COMBO_TERM_FAST)
