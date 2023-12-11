@@ -47,32 +47,6 @@
 };
 
 /* Homerow mods */
-
-#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left hand
-#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right hand
-#define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // thumbs
-
-#define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS) \
-    ZMK_BEHAVIOR(NAME, hold_tap, \
-        flavor = "balanced"; \
-        tapping-term-ms = <280>; \
-        quick-tap-ms = <QUICK_TAP_MS>; \
-        global-quick-tap-ms = <150>; \
-        bindings = <HOLD>, <TAP>; \
-        hold-trigger-key-positions = <TRIGGER_POS>; \
-        hold-trigger-on-release; \
-    )
-MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)  // left-hand HRMs
-MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
-
-MAKE_HRM(hml_repeat, &kp, &key_repeat, KEYS_R THUMBS)  // used for HRM-combo
-MAKE_HRM(hmr_lpar_lt, &kp, &lpar_lt, KEYS_L THUMBS)    // "    "   "   "
-MAKE_HRM(hmr_rpar_gt, &kp, &rpar_gt, KEYS_L THUMBS)    // "    "   "   "
-
-MAKE_HRM(hml_repeat, &kp, &key_repeat, KEYS_R THUMBS)  // used for HRM-combo
-MAKE_HRM(hmr_lpar_lt, &kp, &lpar_lt, KEYS_L THUMBS)    // "    "   "   "
-MAKE_HRM(hmr_rpar_gt, &kp, &rpar_gt, KEYS_L THUMBS)    // "    "   "   "
-
 // long-tap action on hold, short-tap action on all interrupts
 #define MT_CORE \
     flavor = "tap-preferred"; \
@@ -81,65 +55,6 @@ MAKE_HRM(hmr_rpar_gt, &kp, &rpar_gt, KEYS_L THUMBS)    // "    "   "   "
     hold-trigger-key-positions = <0>;
 
 &mt { MT_CORE };
-
-// mask CTRL when holding left/right to avoid accidental jumps to beginning/end of document
-#define MASK_MODS(NAME, MODS, BINDING) \
-    ZMK_BEHAVIOR(NAME, mod_morph, \
-        bindings = <BINDING>, <BINDING>; \
-        mods = <MODS>; \
-    )
-MASK_MODS(masked_home, (MOD_LCTL), &kp HOME)
-MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
-
-/* Custom behaviors */
-
-// tap: left-parenthesis | shft + tap: less-than
-ZMK_BEHAVIOR(lpar_lt, mod_morph,
-    bindings = <&kp LPAR>, <&kp LT>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-// tap: right-parenthesis | shft + tap: greater-than
-ZMK_BEHAVIOR(rpar_gt, mod_morph,
-    bindings = <&kp RPAR>, <&kp GT>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-ZMK_BEHAVIOR(comma_dance, tap_dance,
-    tapping-term-ms = <200>;
-    bindings = <&mt SEMI COMMA>, <&kp BSLH>;
-)
-ZMK_BEHAVIOR(dot_dance, tap_dance,
-    tapping-term-ms = <200>;
-    bindings = <&mt COLON DOT>, <&kp EXCL>;
-)
-ZMK_BEHAVIOR(qt_dance, tap_dance,
-    tapping-term-ms = <200>;
-    bindings = <&mt DQT QMARK>, <&kp SQT>;
-)
-ZMK_BEHAVIOR(hyper_dance, tap_dance,
-    tapping-term-ms = <200>;
-    bindings = <&mt RS(RC(RA(RGUI))) RS(RC(RA(H)))>, <&kp RS(RC(RA(J)))>;
-)
-
-ZMK_BEHAVIOR(nayeon, macro,
-    wait-ms = <0>;
-    tap-ms = <5>;
-    bindings = <&kp N &kp A &kp Y &kp E &kp O &kp N &kp RET>;
-)
-
-// Windows sleep key
-ZMK_BEHAVIOR(win_sleep, macro,
-    wait-ms = <100>;
-    tap-ms = <5>;
-    bindings = <&kp LG(X) &kp U &kp S>;
-)
-
-// misc aliases
-#define CANCEL      &kp K_CANCEL             // cancel caps-word, num-word and smart-mouse
-#define DSK_PREV    &hmr RSHFT LG(LC(LEFT))  // previous desktop
-#define DSK_NEXT    &hmr LALT LG(LC(RIGHT))  // next B    desktop
-#define VOL_DOWN    &hmr LCTRL C_VOL_DN
 
 /* Keymap */
 
