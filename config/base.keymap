@@ -62,6 +62,30 @@ ZMK_BEHAVIOR(vimwrite, macro,
     tap-ms = <5>;
     bindings = <&kp COLON &kp W &kp EXCL &kp RET>;
 )
+
+ZMK_BEHAVIOR(srepeat, macro,
+    wait-ms = <0>;
+    tap-ms = <5>;
+    bindings = <&kp N &kp DOT>;
+)
+
+ZMK_BEHAVIOR(drepeat, macro,
+    wait-ms = <0>;
+    tap-ms = <5>;
+    bindings = <&kp J &kp DOT>;
+)
+
+ZMK_BEHAVIOR(ndiff, macro,
+    wait-ms = <0>;
+    tap-ms = <5>;
+    bindings = <&kp RBKT &kp C>;
+)
+
+ZMK_BEHAVIOR(pdiff, macro,
+    wait-ms = <0>;
+    tap-ms = <5>;
+    bindings = <&kp D &kp O>;
+)
 /* Keymap */
 
 ZMK_CONDITIONAL_LAYER(NAV FN, SYS)  // FN + NAV --> SYS
@@ -80,9 +104,9 @@ ZMK_LAYER(base,
 
 ZMK_LAYER(nav,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-    ___      &vimquit      &vimwrite     ___           ___           ___                      &kp LC(C)     &kp PG_UP     &kp HOME      &kp END        &kp LC(V)      &kp DEL
+    ___      &vimquit      &vimwrite     ___           ___           &srepeat                 &kp LC(C)     &kp PG_UP     &kp HOME      &kp END        &kp LC(V)      &kp DEL
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    ___      ___           ___           ___           ___           ___                      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT      ___            ___
+    ___      ___           ___           ___           ___           &drepeat                 &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT      ___            ___
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
 &out OUT_TOG &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4             &kp LC(X)     &kp PG_DN     &kp C_VOL_DN  &kp C_VOL_UP   &kp C_AL_CALC  ___
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
