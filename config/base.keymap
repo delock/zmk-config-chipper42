@@ -54,9 +54,14 @@
 ZMK_BEHAVIOR(vimquit, macro,
     wait-ms = <0>;
     tap-ms = <5>;
-    bindings = <&kp N &kp A &kp Y &kp E &kp O &kp N &kp RET>;
+    bindings = <&kp COLON &kp Q &kp EXCL &kp RET>;
 )
 
+ZMK_BEHAVIOR(vimwrite, macro,
+    wait-ms = <0>;
+    tap-ms = <5>;
+    bindings = <&kp COLON &kp W &kp EXCL &kp RET>;
+)
 /* Keymap */
 
 ZMK_CONDITIONAL_LAYER(NAV FN, SYS)  // FN + NAV --> SYS
@@ -75,7 +80,7 @@ ZMK_LAYER(base,
 
 ZMK_LAYER(nav,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-    ___      &vimquit      ___           ___           ___           ___                      &kp LC(C)     &kp PG_UP     &kp HOME      &kp END        &kp LC(V)      &kp DEL
+    ___      &vimquit      &vimwrite     ___           ___           ___                      &kp LC(C)     &kp PG_UP     &kp HOME      &kp END        &kp LC(V)      &kp DEL
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     ___      ___           ___           ___           ___           ___                      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT      ___            ___
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
