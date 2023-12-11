@@ -51,17 +51,11 @@
 };
 
 // macros
-macros {
-    zed_em_kay: zed_em_kay {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings
-            = <&macro_press &kp LSHFT>
-            , <&macro_tap &kp Z &kp M &kp K>
-            , <&macro_release &kp LSHFT>
-            ;
-    };
-};
+ZMK_BEHAVIOR(vimquit, macro,
+    wait-ms = <0>;
+    tap-ms = <5>;
+    bindings = <&kp N &kp A &kp Y &kp E &kp O &kp N &kp RET>;
+)
 
 /* Keymap */
 
@@ -81,7 +75,7 @@ ZMK_LAYER(base,
 
 ZMK_LAYER(nav,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-    ___      ___           ___           ___           ___           ___                      &kp LC(C)     &kp PG_UP     &kp HOME      &kp END        &kp LC(V)      &kp DEL
+    ___      &vimquit      ___           ___           ___           ___                      &kp LC(C)     &kp PG_UP     &kp HOME      &kp END        &kp LC(V)      &kp DEL
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     ___      ___           ___           ___           ___           ___                      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT      ___            ___
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
