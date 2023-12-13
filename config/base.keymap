@@ -108,7 +108,7 @@ ZMK_LAYER(base,
 // ime switch is also on this layer by using left hand thumb clusters
 ZMK_LAYER(nav,
 //╭──────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-&srepeat      &vimquit      &vimwrite     &ndiff        &pdiff        U_WH_U                   &kp LC(C)     &kp PG_UP     &kp HOME      &kp END        &kp LC(V)      ___
+&srepeat      &vimquit      &vimwrite     &ndiff        &pdiff        U_WH_U                   &kp LC(C)     &kp PG_UP     &kp HOME      &kp END        &kp LC(V)      &kp DEL
 //├──────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
 &drepeat      ___           U_BTN2        U_BTN3        U_BTN1        U_WH_D                   &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT      ___            ___
 //├──────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
