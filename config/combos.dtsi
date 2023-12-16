@@ -34,7 +34,6 @@ ZMK_COMBO(equal, &kp EQUAL,     RM5 RB5,     DEF, COMBO_TERM_SLOW)
 
 // FN cluster
 ZMK_COMBO(f1,   &kp F1,        LM4 LT4,     NAV, COMBO_TERM_FAST)
-ZMK_COMBO(rpar, &kp RPAR,      LM2 LM0,     NAV, COMBO_TERM_FAST)
 ZMK_COMBO(f2,   &kp F2,        LM3 LT3,     NAV, COMBO_TERM_FAST)
 ZMK_COMBO(f3,   &kp F3,        LM2 LT2,     NAV, COMBO_TERM_FAST)
 ZMK_COMBO(f4,   &kp F4,        LM1 LT1,     NAV, COMBO_TERM_FAST)
@@ -52,7 +51,7 @@ ZMK_COMBO(lpar, &mt RPAR LPAR, LM2 LM0,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(lbkt, &mt RBKT LBKT, LM2 LM1,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(lbrc, &mt RBRC LBRC, LM2 LM3,     DEF, COMBO_TERM_FAST)
 
-//ZMK_COMBO(rpar, &kp RPAR,      LM2 LM0,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(rpar, &kp RPAR,      LM2 LM0,     NAV, COMBO_TERM_FAST)
 //ZMK_COMBO(rbkt, &kp RBKT,      LM2 LM1,     NAV, COMBO_TERM_FAST)
 //ZMK_COMBO(rbrc, &kp RBRC,      LM2 LM3,     NAV, COMBO_TERM_FAST)
 
