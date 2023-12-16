@@ -47,12 +47,12 @@ ZMK_COMBO(f11,  &kp F11,       RT5 RM5,     NAV, COMBO_TERM_SLOW)
 ZMK_COMBO(f12,  &kp F12,       RM5 RB5,     NAV, COMBO_TERM_SLOW)
 
 // brackets cluster
-ZMK_COMBO(lpar, &kp LPAR,      LM2 LM0,     DEF, COMBO_TERM_FAST)
-ZMK_COMBO(rpar, &kp RPAR,      LM2 LM0,     NAV, COMBO_TERM_FAST)
-ZMK_COMBO(lbkt, &kp LBKT,      LM2 LM1,     DEF, COMBO_TERM_FAST)
-ZMK_COMBO(rbkt, &kp RBKT,      LM2 LM1,     NAV, COMBO_TERM_FAST)
-ZMK_COMBO(lbrc, &kp LBRC,      LM2 LM3,     DEF, COMBO_TERM_FAST)
-ZMK_COMBO(rbrc, &kp RBRC,      LM2 LM3,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(lpar1, &kp LPAR,      LM2 LM0,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(rpar1, &kp RPAR,      LM2 LM0,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(lbkt1, &kp LBKT,      LM2 LM1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(rbkt1, &kp RBKT,      LM2 LM1,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(lbrc1, &kp LBRC,      LM2 LM3,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(rbrc1, &kp RBRC,      LM2 LM3,     NAV, COMBO_TERM_FAST)
 
 ZMK_COMBO(pipe, &kp PIPE,      LB0 LM0,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(bslh, &kp BSLH,      LB0 LM0,     NAV, COMBO_TERM_FAST)
