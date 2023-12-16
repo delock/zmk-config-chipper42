@@ -22,30 +22,6 @@
 #define HRC_LPAR   &hmr_lpar_lt RS(LCTRL) 0
 #define HRC_RPAR   &hmr_rpar_gt LA(LCTRL) 0
 
-ZMK_BEHAVIOR(rpar, macro,
-    wait-ms = <0>;
-    tap-ms = <5>;
-    bindings = <&kp RPAR>;
-)
-
-ZMK_BEHAVIOR(rbkt, macro,
-    wait-ms = <0>;
-    tap-ms = <5>;
-    bindings = <&kp RBKT>;
-)
-
-ZMK_BEHAVIOR(rbrc, macro,
-    wait-ms = <0>;
-    tap-ms = <5>;
-    bindings = <&kp RBRC>;
-)
-
-ZMK_BEHAVIOR(pipe, macro,
-    wait-ms = <0>;
-    tap-ms = <5>;
-    bindings = <&kp PIPE>;
-)
-
 // left ctrl cluster
 ZMK_COMBO(ctrl,    &kp LCTRL,     LM5 LB5,     DEF, COMBO_TERM_FAST)
 
@@ -79,9 +55,9 @@ ZMK_COMBO(f11,  &kp F11,       RT5 RM5,     NAV, COMBO_TERM_SLOW)
 ZMK_COMBO(f12,  &kp F12,       RM5 RB5,     NAV, COMBO_TERM_SLOW)
 
 // brackets cluster
-ZMK_COMBO(par,  &mt &rpar LPAR, LM2 LM0,     DEF NAV, COMBO_TERM_FAST)
-ZMK_COMBO(bkt,  &mt &rbkt LBKT, LM2 LM1,     DEF NAV, COMBO_TERM_FAST)
-ZMK_COMBO(brc,  &mt &rbrc LBRC, LM2 LM3,     DEF NAV, COMBO_TERM_FAST)
-ZMK_COMBO(pipe,  &mt &pipe BSLH, LB0 LM0,     DEF NAV, COMBO_TERM_FAST)
+ZMK_COMBO(par,  &mt RPAR LPAR, LM2 LM0,     DEF NAV, COMBO_TERM_FAST)
+ZMK_COMBO(bkt,  &mt RBKT LBKT, LM2 LM1,     DEF NAV, COMBO_TERM_FAST)
+ZMK_COMBO(brc,  &mt RBRC LBRC, LM2 LM3,     DEF NAV, COMBO_TERM_FAST)
+ZMK_COMBO(pipe,  &mt PIPE BSLH, LB0 LM0,     DEF NAV, COMBO_TERM_FAST)
 
 ZMK_COMBO(enter,&kp ENTER,     RM2 RM3,     DEF, COMBO_TERM_SLOW)
