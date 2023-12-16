@@ -11,16 +11,8 @@
 #undef COMBO_HOOK
 #define COMBO_HOOK global-quick-tap-ms = <100>;
 
-//#define COMBO_TERM_FAST 20
-//#define COMBO_TERM_SLOW 35
 #define COMBO_TERM_FAST 50
 #define COMBO_TERM_SLOW 50
-
-// make homerow combos tap-only (so HRMs can be chorded instantaneously)
-#define HRC_TAB    &hml         LA(LCTRL) TAB
-#define HRC_REPEAT &hml_repeat  LS(LCTRL) 0
-#define HRC_LPAR   &hmr_lpar_lt RS(LCTRL) 0
-#define HRC_RPAR   &hmr_rpar_gt LA(LCTRL) 0
 
 // left ctrl cluster
 ZMK_COMBO(ctrl,    &kp LCTRL,     LM5 LB5,     DEF, COMBO_TERM_FAST)
@@ -58,10 +50,12 @@ ZMK_COMBO(f12,  &kp F12,       RM5 RB5,     NAV, COMBO_TERM_SLOW)
 ZMK_COMBO(lpar, &mt RPAR LPAR, LM2 LM0,     DEF NAV, COMBO_TERM_FAST)
 ZMK_COMBO(lbkt, &mt RBKT LBKT, LM2 LM1,     DEF NAV, COMBO_TERM_FAST)
 ZMK_COMBO(lbrc, &mt RBRC LBRC, LM2 LM3,     DEF NAV, COMBO_TERM_FAST)
-ZMK_COMBO(pipe, &mt BSLH PIPE, LB0 LM0,     DEF, COMBO_TERM_FAST)
+
 //ZMK_COMBO(rpar, &kp RPAR,      LM2 LM0,     NAV, COMBO_TERM_FAST)
 //ZMK_COMBO(rbkt, &kp RBKT,      LM2 LM1,     NAV, COMBO_TERM_FAST)
 //ZMK_COMBO(rbrc, &kp RBRC,      LM2 LM3,     NAV, COMBO_TERM_FAST)
+
+ZMK_COMBO(pipe, &mt BSLH PIPE, LB0 LM0,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(bslh, &kp BSLH,      LB0 LM0,     NAV, COMBO_TERM_FAST)
 ZMK_COMBO(under,&kp UNDER,     LB1 LB2,     DEF NAV, COMBO_TERM_FAST)
 ZMK_COMBO(tilde,&kp TILDE,     LT1 LT2,     DEF NAV, COMBO_TERM_FAST)
