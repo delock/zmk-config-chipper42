@@ -100,7 +100,6 @@ ZMK_BEHAVIOR(todo, macro,
     ZMK_BEHAVIOR(NAME, hold_tap, \
         flavor = "balanced"; \
         tapping-term-ms = <280>; \
-        require-prior-idle-ms = <125>; \
         quick-tap-ms = <QUICK_TAP_MS>; \
         bindings = <HOLD>, <TAP>; \
         hold-trigger-key-positions = <TRIGGER_POS>; \
