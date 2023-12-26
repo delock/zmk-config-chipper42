@@ -24,7 +24,7 @@
 
 /* Global settings */
 
-#define QUICK_TAP_MS 175
+#define QUICK_TAP_MS 100
 
 &sk {  // sticky-key config
     release-after-ms = <600>;  // release after 0.6s
@@ -100,8 +100,8 @@ ZMK_BEHAVIOR(todo, macro,
     ZMK_BEHAVIOR(NAME, hold_tap, \
         flavor = "balanced"; \
         tapping-term-ms = <280>; \
+        require-prior-idle-ms = <125>; \
         quick-tap-ms = <QUICK_TAP_MS>; \
-        global-quick-tap-ms = <150>; \
         bindings = <HOLD>, <TAP>; \
         hold-trigger-key-positions = <TRIGGER_POS>; \
         hold-trigger-on-release; \
