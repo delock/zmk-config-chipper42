@@ -100,6 +100,7 @@ ZMK_BEHAVIOR(todo, macro,
     ZMK_BEHAVIOR(NAME, hold_tap, \
         flavor = "balanced"; \
         tapping-term-ms = <150>; \
+        retro-tap; \
         bindings = <HOLD>, <TAP>; \
         hold-trigger-key-positions = <TRIGGER_POS>; \
         hold-trigger-on-release; \
