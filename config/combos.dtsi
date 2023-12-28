@@ -47,7 +47,7 @@ ZMK_COMBO(f12,  &kp F12,       RM5 RB5,     NAV, COMBO_TERM_SLOW)
 ZMK_COMBO(tab,  &kp TAB,       LT2 LT3,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(esc,  &kp ESC,       LM2 LM3,     DEF, COMBO_TERM_FAST)
 
-ZMK_COMBO(rbkt, &kp LBKT,      RM2 RM1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(lbkt, &kp LBKT,      RM2 RM1,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(rbkt, &kp RBKT,      RM2 RM1,     NAV, COMBO_TERM_FAST)
 
 ZMK_COMBO(under,&kp UNDER,     LB1 LB2,     DEF NAV, COMBO_TERM_FAST)
