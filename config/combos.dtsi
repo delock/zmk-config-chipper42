@@ -29,6 +29,15 @@ ZMK_COMBO(zero,  &kp N0,        RM4 RT4,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(minus, &kp MINUS,     RT5 RM5,     DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(equal, &kp EQUAL,     RM5 RB5,     DEF, COMBO_TERM_SLOW)
 
+// alternative number cluster
+ZMK_COMBO(one,   &kp N1,        LT1 LT2,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(two,   &kp N2,        LT0 LT1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(six,   &kp N6,        LM1 LM2,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(seven, &kp N7,        LM0 LM1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(eight, &kp N8,        LM2 LB2,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(nine,  &kp N9,        LM1 LB1,     DEF, COMBO_TERM_FAST)
+ZMK_COMBO(zero,  &kp N0,        LM0 LB0,     DEF, COMBO_TERM_FAST)
+
 // FN cluster
 ZMK_COMBO(f1,   &kp F1,        LM4 LT4,     NAV, COMBO_TERM_FAST)
 ZMK_COMBO(f2,   &kp F2,        LM3 LT3,     NAV, COMBO_TERM_FAST)
