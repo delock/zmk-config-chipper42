@@ -10,6 +10,7 @@
 // use global-quick-tap-ms for combos (requires PR 1387)
 #undef COMBO_HOOK
 #define COMBO_HOOK global-quick-tap-ms = <100>;
+#define CONFIG_ZMK_COMBO_MAX_COMBOS_PER_KEY = 8
 
 #define COMBO_TERM_FAST 50
 #define COMBO_TERM_SLOW 50
@@ -49,13 +50,13 @@ ZMK_COMBO(f2,   &kp F2,        LT0 LT1,     NAV, COMBO_TERM_FAST)
 ZMK_COMBO(f3,   &kp F3,        LM2 LT2,     NAV, COMBO_TERM_FAST)
 ZMK_COMBO(f4,   &kp F4,        LM1 LT1,     NAV, COMBO_TERM_FAST)
 ZMK_COMBO(f5,   &kp F5,        LM0 LT0,     NAV, COMBO_TERM_FAST)
-//ZMK_COMBO(f6,   &kp F6,        LM1 LM2,     NAV, COMBO_TERM_FAST)
-//ZMK_COMBO(f7,   &kp F7,        LM0 LM1,     NAV, COMBO_TERM_FAST)
-//ZMK_COMBO(f8,   &kp F8,        LM2 LB2,     NAV, COMBO_TERM_FAST)
-//ZMK_COMBO(f9,   &kp F9,        LM1 LB1,     NAV, COMBO_TERM_FAST)
-//ZMK_COMBO(f10,  &kp F10,       LM0 LB0,     NAV, COMBO_TERM_FAST)
-//ZMK_COMBO(f11,  &kp F11,       LB1 LB2,     NAV, COMBO_TERM_SLOW)
-//ZMK_COMBO(f12,  &kp F12,       LB0 LB1,     NAV, COMBO_TERM_SLOW)
+ZMK_COMBO(f6,   &kp F6,        LM1 LM2,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(f7,   &kp F7,        LM0 LM1,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(f8,   &kp F8,        LM2 LB2,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(f9,   &kp F9,        LM1 LB1,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(f10,  &kp F10,       LM0 LB0,     NAV, COMBO_TERM_FAST)
+ZMK_COMBO(f11,  &kp F11,       LB1 LB2,     NAV, COMBO_TERM_SLOW)
+ZMK_COMBO(f12,  &kp F12,       LB0 LB1,     NAV, COMBO_TERM_SLOW)
 
 // brackets cluster
 ZMK_COMBO(tab,  &kp TAB,       LT2 LT3,     DEF NAV, COMBO_TERM_FAST)
