@@ -49,11 +49,6 @@ ZMK_COMBO(f2_,   &kp F2,        LT3 LM3,     NAV, COMBO_TERM_FAST)
 ZMK_COMBO(f6_,   &kp F6,        LB4 LM4,     NAV, COMBO_TERM_FAST)
 ZMK_COMBO(f7_,   &kp F7,        LB3 LM3,     NAV, COMBO_TERM_FAST)
 
-// left hand special cluster
-ZMK_COMBO(tab,   &kp TAB,       LT2 LT3,     DEF NAV, COMBO_TERM_FAST)
-ZMK_COMBO(esc,   &kp ESC,       LM2 LM3,     DEF NAV, COMBO_TERM_FAST)
-ZMK_COMBO(lshft, &kp LSHFT,     LB2 LB3,     DEF NAV, COMBO_TERM_FAST)
-
 // symbol cluster
 ZMK_COMBO(lbkt,  &kp LBKT,      RM2 RM1,     DEF, COMBO_TERM_FAST)
 ZMK_COMBO(rbkt,  &kp RBKT,      RM2 RM1,     NAV, COMBO_TERM_FAST)
