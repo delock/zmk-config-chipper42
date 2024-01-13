@@ -12,7 +12,7 @@
 #define COMBO_HOOK global-quick-tap-ms = <100>;
 
 #define COMBO_TERM_SLOW 50
-#define COMBO_TERM_FAST 30
+#define COMBO_TERM_FAST 35
 
 // number cluster
 ZMK_COMBO(one_,  &kp N1,        LT4 LM4,     DEF, COMBO_TERM_SLOW)
