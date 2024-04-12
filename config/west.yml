@@ -2,11 +2,11 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: urob
-      url-base: https://github.com/urob
+    - name: delock
+      url-base: https://github.com/delock
   projects:
     - name: zmk
-      remote: urob
+      remote: delock
       revision: main-3.2
       import: app/west.yml
   self:
